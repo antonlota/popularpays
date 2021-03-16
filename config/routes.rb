@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :creators
   resources :gigs
   resources :gig_payments
+
+  put  'gigs/:id' => 'gigs#update'
 end
